@@ -1,0 +1,143 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+#calculator {
+	font-size: 18px;
+	line-height: 1.36em;
+}
+.container {
+	max-width: 720px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 30px;
+}
+
+.btn {
+	background: none;
+	border: none;
+	color: inherit;
+	cursor: pointer;
+}
+.btn-heavy {
+	background-color: #0e0e0e;
+	padding: 1em 1.4em;
+	transition: border-color .16s;
+	border: 1px solid transparent;
+}
+.btn-heavy:hover {
+	/* background-color: #28282e; */
+	border-color: rgba(152, 175, 201, 0.349);
+}
+small {
+	font-size: 14px;
+}
+
+/**/
+
+.hero {
+	align-items: flex-end;
+	background-color: rgb(43, 43, 170);
+	/* background-image: linear-gradient(#04103d, #1e3c66); */
+	background-image: url(upload/img/hero-placeholder.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+	display: flex;
+	font-size: 20px;
+	line-height: 1.38em;
+	min-height: 450px;
+}
+.hero__content {
+	margin-bottom: 2em;
+	width: 100%;
+}
+.hero__text {
+	max-width: 280px;
+}
+.hero__text p+p {
+	margin-top: 1em;
+}
+.hero__text + .hero__actions {
+	margin-top: 2em;
+}
+
+/**/
+
+.rangers-block {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	grid-gap: 1em 3em;
+	padding-top: 1em;
+}
+.ranger {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	text-align: center;
+}
+.ranger-note__target {
+	border: 1px solid silver;
+	display: inline;
+	padding: 0.16em .4em;
+}
+.ranger-note__target + .ranger-note__footer {
+	margin-top: 1em;
+}
+.ranger input[type="range"] {
+	min-width: 240px;
+	margin-top: .5em;
+	cursor: pointer;
+}
+.rangers-block + .ranger-note {
+	margin-top: 1.3em;
+}
+.ranger-note {
+	text-align: center;
+}
+
+/**/
+
+.calc-main {
+	background-color: white;
+	padding: 2em 0;
+}
+.calc-main .container + .container {
+	margin-top: 2em;
+}
+.calc-main h2 {
+	font-size: 18px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.calc-note {
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	grid-gap: 2em;
+}
+.calc-note__main {
+	padding-top: .2em;
+}
+.calc-note__aside {
+	background-color: whitesmoke;
+	padding: 1em 1.3em;
+	line-height: 1.38em;
+}
+
+/**/
+
+@media only screen and (max-width: 660px) {
+	.calc-note {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.container {
+		padding: 0 20px;
+	}
+}
