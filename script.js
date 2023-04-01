@@ -1,6 +1,3 @@
-console.log('Test');
-
-// Получаем ссылки на элементы управления формой
 const depositInput = document.getElementById('calculator-val-deposit');
 const timeInput = document.getElementById('calculator-val-time');
 const resultOutput = document.getElementById('calculator-result');
